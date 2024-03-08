@@ -71,20 +71,6 @@ console.log(containerWidth)
 
 
 
-
-document.querySelectorAll('span').forEach(word => {
-   word.style.transform = `scale(${containerWidth / (word.clientWidth+20)})`;
-   word.style.display = 'block';
-})
-document.querySelectorAll('h2').forEach(word => {
-   word.style.transform = `scale(${containerWidth / (word.clientWidth+20)})`;
-   word.style.display = 'block'
-})
-document.querySelectorAll('h1').forEach(word => {
-   word.style.transform = `scale(${containerWidth / (word.clientWidth+20)})`;
-   word.style.display = 'block'
-})
-
 function getRandomRange(min, max) {
    return Math.random() * (max - min) + min;
 }
