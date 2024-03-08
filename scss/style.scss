@@ -1,0 +1,142 @@
+@import "nullstyle.scss";
+
+:root {
+   --font-family: "Unbounded", sans-serif;
+}
+
+html,
+body {
+   background: linear-gradient(136deg, #ffaaec 0%, #b51d1d 100%);
+   scroll-behavior: smooth;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+main {
+   flex: 1 1 auto;
+}
+.flowers {
+   overflow: hidden;
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   bottom: 0;
+   .flower-item {
+      transition: all 0.5s ease 0s;
+      top: 100%;
+
+      position: absolute;
+      aspect-ratio: 1/1;
+      display: block;
+   }
+}
+.container {
+   padding: 0 1rem;
+}
+.s-1 {
+   overflow: hidden;
+   padding-top: 2rem;
+   span {
+      font-family: var(--font-family);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #fff;
+   }
+   h1 {
+      font-family: var(--font-family);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #fff;
+   }
+}
+
+h1 {
+}
+.first-btn {
+   margin: 2rem auto;
+}
+.btn {
+   width: 100%;
+   text-align: center;
+   padding: 0.5rem 1rem;
+   font-size: 24px;
+   font-family: var(--font-family);
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.s-1 {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   transition: all 0.3s ease;
+}
+.s-1.remove {
+   margin-top: -100vh;
+}
+
+section {
+   height: 100vh;
+   padding-top: 2rem;
+   opacity: 0;
+   transition: all 1s ease 1s;
+   // display: none;
+}
+section.remove {
+   margin-top: -100vh;
+}
+.s-1 {
+   opacity: 1;
+   display: block;
+}
+
+span,
+h2,
+h1 {
+   font-weight: 700;
+   font-family: var(--font-family);
+   color: #fff;
+   text-transform: uppercase;
+   width: max-content;
+   position: relative;
+   left: 0;
+   right: 0;
+   margin: auto;
+   height: 100%;
+}
+
+span,
+h2,
+h1 {
+   transition: all 0.3s ease;
+   padding: 10px 0;
+   height: max-content;
+   width: max-content;
+   display: inline-block;
+}
+
+p {
+   margin-bottom: 20px;
+   font-size: 20px;
+   line-height: 120%;
+   color: #fff;
+   font-weight: 300;
+   font-family: var(--font-family);
+}
+
+.footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   background: #331f1f;
+   color: #fff;
+   font-family: var(--font-family);
+   .container {
+      font-size: 12px;
+   }
+   padding: 1.5rem 0;
+}
